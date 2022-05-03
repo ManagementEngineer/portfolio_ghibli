@@ -39,7 +39,7 @@ const ParticlesBackground = () => {
                             mode: "snow",
                             parallax: { enable: false, force: 2, smooth: 10 }
                         },
-                        resize: true
+                        resize: false
                     },
                     modes: {
                         snow: {
@@ -76,7 +76,7 @@ const ParticlesBackground = () => {
                     },
                     number: { density: { enable: true, area: 1080 }, value: 10 },
                     opacity: {
-                        random: true,
+                        random: false,
                         value: 1
                     },
                     shape: {
@@ -84,18 +84,18 @@ const ParticlesBackground = () => {
                         options: {
                             images: images.map(img => ({
                                 src: img,
-                                height: 100,
-                                width: 100
                             }))
                         }
                     },
                     size: {
-                        random: true,
-                        value: 10
+                        random: false,
+                        value: 50
                     }
                 },
                 detectRetina: true
             }}
+
+
         />
     )
 }

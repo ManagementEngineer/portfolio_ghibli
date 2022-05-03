@@ -25,9 +25,10 @@ const Home = () => {
 
     return (
         <>
+            <ParticlesBackground />
             <div className='container home-page'>
                 <div className='row'>
-                    <ParticlesBackground />
+
                     <div className='col-6'>
                         <div className='text-zone'>
                             <h1>
