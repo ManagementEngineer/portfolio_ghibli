@@ -1,5 +1,10 @@
+.home-page {
+    padding: 5.625rem 1.875rem;
+    background-color: #055e81;
+}
+
 .text-zone {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
 
@@ -45,7 +50,7 @@
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
-        font-family: sans-serif !important;
+        font-family: 'Montserrat', sans-serif;
         text-decoration: none;
         padding: 10px 18px;
         border: 1px solid #00a651 !important;

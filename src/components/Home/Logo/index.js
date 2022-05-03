@@ -27,7 +27,7 @@ const Logo = () => {
 
 
     return (
-        <div className="logo-container" ref={bgRef}>
+        <div className="container-fluid logo-container" ref={bgRef}>
             <svg
                 version="1.1"
                 viewBox="0 0 673.03 844.95"

@@ -23,7 +23,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='container'>
+            <div className='container-fluid home-page'>
                 <div className='row'>
                     <div className='col-6'>
                         <div className='text-zone'>
@@ -38,7 +38,7 @@ const Home = () => {
                                 <br />
                                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={23} />
                             </h1>
-                            <h2>Software Developer/Process Engineer</h2>
+                            <h2>Front-end/Process Improvement/Data Analysis</h2>
                             <Button variant='primary' className='custom-btn'>
                                 Contact Me
                             </Button>
