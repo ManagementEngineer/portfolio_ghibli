@@ -8,6 +8,8 @@ import Logo from './Logo';
 import { Button } from 'react-bootstrap';
 
 import './index.scss';
+import ParticlesBackground from '../ParticlesBackground.js';
+
 
 
 const Home = () => {
@@ -23,8 +25,9 @@ const Home = () => {
 
     return (
         <>
-            <div className='container-fluid home-page'>
+            <div className='container home-page'>
                 <div className='row'>
+                    <ParticlesBackground />
                     <div className='col-6'>
                         <div className='text-zone'>
                             <h1>

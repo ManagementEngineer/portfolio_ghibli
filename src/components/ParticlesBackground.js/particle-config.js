@@ -1,118 +1,115 @@
 const ParticlesConfig = {
-    background: {
-        color: "#6f32a8"
-    },
     fullScreen: {
-        enable: true,
-        zIndex: -1
+        enable: true
     },
     particles: {
         number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
+            value: 0
         },
         color: {
-            value: "#ffffff"
+            value: ["#1E00FF", "#FF0061", "#E1FF00", "#00FF9E"]
         },
         shape: {
-            type: "circle",
-            stroke: {
-                width: 0,
-                color: "#000000"
-            },
-            polygon: {
-                nb_sides: 5
-            },
-            image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100
+            type: "confetti",
+            options: {
+                confetti: {
+                    type: ["circle", "square"]
+                }
             }
         },
         opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false
+            value: 1,
+            animation: {
+                enable: true,
+                minimumValue: 0,
+                speed: 2,
+                startValue: "max",
+                destroy: "min"
             }
         },
         size: {
-            value: 3,
-            random: true,
-            anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
-                sync: false
+            value: 7,
+            random: {
+                enable: true,
+                minimumValue: 3
             }
         },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1
+        life: {
+            duration: {
+                sync: true,
+                value: 5
+            },
+            count: 1
         },
         move: {
             enable: true,
-            speed: 3,
+            gravity: {
+                enable: true,
+                acceleration: 20
+            },
+            speed: 50,
+            decay: 0.05,
             direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200
+            outModes: {
+                default: "destroy",
+                top: "none"
             }
         }
     },
     interactivity: {
-        detect_on: "canvas",
+        detectsOn: "window",
         events: {
-            onhover: {
-                enable: false,
-                mode: "repulse"
-            },
-            onclick: {
-                enable: false,
-                mode: "push"
-            },
             resize: true
-        },
-        modes: {
-            grab: {
-                distance: 400,
-                line_linked: {
-                    opacity: 1
-                }
-            },
-            bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3
-            },
-            repulse: {
-                distance: 200,
-                duration: 0.4
-            },
-            push: {
-                particles_nb: 4
-            },
-            remove: {
-                particles_nb: 2
-            }
         }
     },
-    retina_detect: true
+    detectRetina: true,
+    background: {
+        color: "#000"
+    },
+    responsive: [
+        {
+            maxWidth: 700,
+            options: {
+                particles: {
+                    move: {
+                        speed: 30,
+                        decay: 0.05
+                    }
+                }
+            }
+        }
+    ],
+    emitters: [
+        {
+            direction: "top-right",
+            rate: {
+                delay: 0.1,
+                quantity: 10
+            },
+            position: {
+                x: 0,
+                y: 50
+            },
+            size: {
+                width: 0,
+                height: 0
+            }
+        },
+        {
+            direction: "top-left",
+            rate: {
+                delay: 0.1,
+                quantity: 10
+            },
+            position: {
+                x: 100,
+                y: 50
+            },
+            size: {
+                width: 0,
+                height: 0
+            }
+        }
+    ]
 };
 export default ParticlesConfig;

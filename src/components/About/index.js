@@ -16,7 +16,7 @@ const About = () => {
 
     return (
         <>
-            <div className='container-fluid about-page'>
+            <div className='container about-page'>
                 <div className='row'>
                     <div className='col-6'>
                         <div className='text-zone'>
