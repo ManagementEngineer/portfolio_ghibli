@@ -5,7 +5,7 @@ import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import LogoTitle from '../../assets/images/logo-s.png';
 import Logo from './Logo';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 
 import './index.scss';
 import ParticlesBackground from '../ParticlesBackground.js';
@@ -26,30 +26,31 @@ const Home = () => {
     return (
         <>
             <ParticlesBackground />
-            <div className='container home-page'>
-                <div className='row'>
-
-                    <div className='col-6'>
-                        <div className='text-zone'>
-                            <h1>
-                                <span className={letterClass}>H</span>
-                                <span className={`${letterClass} _12`}>i, </span>
-                                <br />
-                                <span className={`${letterClass} _13`}>I</span>
-                                <span className={`${letterClass} _14`}>'</span>
-                                <span className={`${letterClass} _15`}>m </span>
-                                <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
-                                <br />
-                                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={23} />
-                            </h1>
-                            <h2>Front-end/Process Improvement/Data Analysis</h2>
-                            <Button variant='primary' className='custom-btn'>
-                                Contact Me
-                            </Button>
+            <div className='container-fluid home-page'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-6'>
+                            <div className='text-zone'>
+                                <h1>
+                                    <span className={letterClass}>H</span>
+                                    <span className={`${letterClass} _12`}>i, </span>
+                                    <br />
+                                    <span className={`${letterClass} _13`}>I</span>
+                                    <span className={`${letterClass} _14`}>'</span>
+                                    <span className={`${letterClass} _15`}>m </span>
+                                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
+                                    <br />
+                                    <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={23} />
+                                </h1>
+                                <h2>Front-end/Process Improvement/Data Analysis</h2>
+                                <Button variant='primary' className='custom-btn'>
+                                    Contact Me
+                                </Button>
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-6'>
-                        <Logo />
+                        <div className='col-6'>
+                            <Logo />
+                        </div>
                     </div>
                 </div>
             </div>

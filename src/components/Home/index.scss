@@ -1,9 +1,12 @@
 .home-page {
     padding: 5.625rem 1.875rem;
-    background-color: #055e81;
+    background-image: url('../../assets/images/background_image.PNG');
+    height: 90%;
+
 }
 
 .text-zone {
+    height: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -56,7 +59,6 @@
         border: 1px solid #00a651 !important;
         margin-top: 25px;
         float: left;
-        animation-delay: 3s;
         animation: slideInUp 3s;
         white-space: nowrap;
 

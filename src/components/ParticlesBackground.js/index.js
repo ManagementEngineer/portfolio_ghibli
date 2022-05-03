@@ -24,10 +24,7 @@ const ParticlesBackground = () => {
             options={{
                 backgroundMode: {
                     enable: true,
-                    zIndex: -1
-                },
-                background: {
-                    color: "#fff"
+                    zIndex: 0
                 },
                 fpsLimit: 60,
                 interactivity: {
@@ -36,8 +33,8 @@ const ParticlesBackground = () => {
                         onClick: { enable: true, mode: "repulse" },
                         onHover: {
                             enable: true,
-                            mode: "snow",
-                            parallax: { enable: false, force: 2, smooth: 10 }
+                            mode: "repulse",
+                            parallax: { enable: false, force: 5, smooth: 10 }
                         },
                         resize: false
                     },
@@ -56,7 +53,7 @@ const ParticlesBackground = () => {
                     }
                 },
                 particles: {
-                    color: { value: "#38527BE6" },
+                    color: { value: "#fff" },
                     links: {
                         color: "#ffffff",
                         distance: 500,
@@ -71,10 +68,10 @@ const ParticlesBackground = () => {
                         outMode: "out",
                         random: false,
                         size: true,
-                        speed: 4,
+                        speed: 2,
                         straight: false
                     },
-                    number: { density: { enable: true, area: 1080 }, value: 10 },
+                    number: { density: { enable: true, area: 1080 }, value: 3 },
                     opacity: {
                         random: false,
                         value: 1
@@ -89,7 +86,7 @@ const ParticlesBackground = () => {
                     },
                     size: {
                         random: false,
-                        value: 50
+                        value: 40
                     }
                 },
                 detectRetina: true
