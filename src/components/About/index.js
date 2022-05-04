@@ -19,16 +19,18 @@ const About = () => {
             <div className='container-fluid about-page'>
                 <div className='container'>
                     <div className='row'>
+                        <div className='col-12'>
+                            <h1>
+                                <AnimatedLetters
+                                    letterClass={letterClass}
+                                    strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
+                                    idx={15}
+                                />
+                            </h1>
+                        </div>
+
                         <div className='col-6'>
                             <div className='text-zone'>
-                                <h1>
-                                    <AnimatedLetters
-                                        letterClass={letterClass}
-                                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
-                                        idx={15}
-                                    />
-                                </h1>
-
                                 <p>
                                     I'm a University of Waterloo Engineering graduate passionate with building things and makking life easier.
                                 </p>
@@ -41,7 +43,15 @@ const About = () => {
                                 <p>
                                     I'm a University of Waterloo Engineering graduate passionate with building things and makking life easier.
                                 </p>
-
+                                <p>
+                                    I'm a University of Waterloo Engineering graduate passionate with building things and makking life easier.
+                                </p>
+                                <p>
+                                    I'm a Universiasdadasith building things and makking life easier.
+                                </p>
+                                <p>
+                                    asda aasdadadsa.
+                                </p>
 
                             </div>
                         </div>
