@@ -1,13 +1,12 @@
 .about-page {
-    padding: 5.625rem 1.875rem;
     background-color: #b95b69;
+    display: flex;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-zone {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 
     h1 {
         color: #fff;

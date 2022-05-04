@@ -1,8 +1,9 @@
 .home-page {
-    padding: 5.625rem 1.875rem;
     background-image: url('../../assets/images/background_image.PNG');
-    height: 90%;
-
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-zone {
@@ -21,18 +22,12 @@
         &:before {
             color: #fff;
             font-size: 28.8px;
-            position: absolute;
-            margin-top: -40px;
-            left: -15px;
             opacity: 0.6;
         }
 
         &:after {
             color: #fff;
             font-size: 28.8px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
@@ -40,7 +35,6 @@
 
     h2 {
         color: #d9d9d9;
-        margin-top: 20px;
         font-weight: 400;
         font-size: 32px;
         font-family: sans-serif;
@@ -51,7 +45,6 @@
     .custom-btn {
         background-color: #00a651 !important;
         font-size: 13px;
-        font-weight: 400;
         letter-spacing: 4px;
         font-family: 'Montserrat', sans-serif;
         text-decoration: none;
