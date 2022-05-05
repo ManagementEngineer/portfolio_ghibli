@@ -1,9 +1,13 @@
 .home-page {
-    background-image: url('../../assets/images/background_image.PNG');
+    background-image: url('../../assets/images/bridge.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #6daca4;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
+
 
     .text-zone {
         height: 100%;
@@ -40,6 +44,8 @@
             animation: fadeIn 3s 1.8s backwards;
         }
 
+
+
         .custom-btn {
             background-color: #00a651 !important;
             font-size: 13px;
@@ -58,5 +64,8 @@
                 color: #ffffff;
             }
         }
+
+
     }
+
 }

@@ -9,6 +9,7 @@ import { Button, Container } from 'react-bootstrap';
 
 import './index.scss';
 import ParticlesBackground from '../ParticlesBackground.js';
+import NoFace from '../../assets/images/no_face.svg';
 
 
 
