@@ -30,7 +30,7 @@ const Home = () => {
             <div className='container-fluid home-page'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-6'>
+                        <div className='col-lg-6 col-md-12'>
                             <div className='text-zone'>
                                 <h1>
                                     <span className={letterClass}>H</span>
@@ -49,7 +49,7 @@ const Home = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className='col-6'>
+                        <div className='col-lg-6 col-md-12'>
                             <Logo />
                         </div>
                     </div>

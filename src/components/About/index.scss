@@ -2,6 +2,8 @@
     background-color: #999778;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 
 
     h1 {
@@ -114,6 +116,16 @@
         }
     }
 
+    img {
+        left: 30%;
+        top: 35%;
+        height: 50%;
+        width: 50%;
+        position: relative;
+    }
+
+    ;
+
 }
 
 @keyframes spincube {
@@ -141,5 +153,11 @@
 
     83% {
         transform: rotateX(90deg);
+    }
+}
+
+@media screen and (min-width: 601px) {
+    div.example {
+        font-size: 80px;
     }
 }

@@ -1,31 +1,45 @@
 .contact-page {
-    background-color: #a5baa9;
+    background-color: #999778;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+
 
     h1 {
         position: relative;
         color: #fff;
-        font-size: 103px;
+        font-size: 6.25rem;
         line-height: 100px;
         font-family: 'Coolvetica';
         font-weight: 400;
         margin-top: 10%;
-        text-align: center;
+        text-align: left;
 
         &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
             color: #fff;
             font-size: 28.8px;
             opacity: 0.6;
+            margin-top: -5%;
+            left: -5%;
+            position: absolute;
         }
 
         &:after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore', cursive;
             color: #fff;
             font-size: 28.8px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+            bottom: -90%;
+            left: -5%;
+            position: absolute;
         }
     }
+
 
     .contact-form {
         width: 100%;
@@ -104,7 +118,7 @@
 
     .text-zone {
         height: 100%;
-        margin-top: 20%;
+        margin-top: 10%;
 
         p {
             font-size: 13px;
@@ -146,7 +160,7 @@
     .info-map {
         position: relative;
         background: #000;
-        top: 5rem;
+        margin-top: 10%;
         z-index: 999999;
         width: 267px;
         padding: 20px;

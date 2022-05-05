@@ -4,6 +4,7 @@ import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGit, faHtml5, faJs, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+import tossSprite from '../../assets/images/toss.svg';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -29,7 +30,7 @@ const About = () => {
                             </h1>
                         </div>
 
-                        <div className='col-6'>
+                        <div className='col-lg-6 col-md-12'>
                             <div className='text-zone'>
                                 <p>
                                     I'm a University of Waterloo Engineering graduate passionate with building things and makking life easier.
@@ -56,7 +57,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className='col-6'>
+                        <div className='col-lg-6 col-md-12'>
                             <div className='stage-cube-cont'>
                                 <div className='cubespinner'>
                                     <div className='face1'>
@@ -77,8 +78,11 @@ const About = () => {
                                     <div className='face6'>
                                         <FontAwesomeIcon icon={faGit} color='#EC4D28' />
                                     </div>
+
                                 </div>
+                                <img src={tossSprite} />
                             </div>
+
                         </div>
 
                     </div>

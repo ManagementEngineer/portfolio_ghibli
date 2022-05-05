@@ -1,26 +1,25 @@
 .navbar-custom {
-    background-color: #38527BE6 !important;
-}
 
-.logo {
-    width: 1.8rem;
-    height: 1.8rem;
-}
+    .logo {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
 
-ul {
-    width: 100%;
-    justify-content: right;
+    .list {
+        width: 100%;
+        justify-content: right;
 
-    li {
-        a {
-            font-size: 1rem;
-            color: #fff !important;
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 0.0375rem;
 
-            &:hover {
-                color: #00a651 !important;
-            }
+    }
+
+    .link {
+        font-size: 1rem;
+        color: #fff !important;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.0375rem;
+
+        &:hover {
+            color: #00a651 !important;
         }
     }
 }

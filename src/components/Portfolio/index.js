@@ -28,7 +28,7 @@ const Portfolio = () => {
                     </div>
                     <div className='container card-wrap'>
                         <div className='row'>
-                            <div className="col-sm-4">
+                            <div className="col-lg-4">
                                 <WebCard
                                     image={YelpCampImg}
                                     cardText={'Yelp Camp'}
@@ -36,7 +36,7 @@ const Portfolio = () => {
                                     githubLink={'webLink'} />
                             </div>
 
-                            <div className="col-sm-4">
+                            <div className="col-lg-4">
                                 <WebCard
                                     image={RJBlogImg}
                                     cardText={'RJ Blog'}
@@ -44,7 +44,7 @@ const Portfolio = () => {
                                     githubLink={'webLink'} />
                             </div>
 
-                            <div className="col-sm-4">
+                            <div className="col-lg-4">
                                 <WebCard
                                     image={RJBlogImg}
                                     cardText={'card3Text'}
