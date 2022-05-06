@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from 'react';
 import YelpCampImg from '../../assets/images/yelp-camp.PNG';
 import RJBlogImg from '../../assets/images/RJBlog.PNG';
+import Loader from 'react-loaders';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -26,7 +27,7 @@ const Portfolio = () => {
                             />
                         </h1>
                     </div>
-                    <div className='container card-wrap'>
+                    <div className='card-wrap'>
                         <div className='row'>
                             <div className="col-lg-4">
                                 <WebCard
@@ -54,6 +55,9 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Loader type='pacman'></Loader>
             </div>
         </div>
     )
