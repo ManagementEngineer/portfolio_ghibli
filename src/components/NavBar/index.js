@@ -11,9 +11,6 @@ const NavBar = () => {
     return (
 
         <Navbar className="navbar-custom fixed-top" expand="lg" >
-            < Navbar.Brand href="#" >
-                <img className='logo' src={logo} />
-            </Navbar.Brand >
             <Navbar.Toggle aria-controls="basic-navbar-nav">
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">

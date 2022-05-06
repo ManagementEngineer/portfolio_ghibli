@@ -59,7 +59,7 @@ const Portfolio = () => {
             <div>
                 <Loader type='pacman'></Loader>
             </div>
-        </div>
+        </div >
     )
 }
 
