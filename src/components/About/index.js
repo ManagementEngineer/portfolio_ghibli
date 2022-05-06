@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGit, faHtml5, faJs, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 import tossSprite from '../../assets/images/toss.svg';
+import { h1 } from 'react-bootstrap'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -20,17 +21,15 @@ const About = () => {
             <div className='container-fluid about-page'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-12'>
-                            <h1>
+                        <div className='col-lg-6 col-md-12'>
+                            <h1 className='display-1'>
                                 <AnimatedLetters
                                     letterClass={letterClass}
                                     strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
                                     idx={15}
                                 />
                             </h1>
-                        </div>
 
-                        <div className='col-lg-6 col-md-12'>
                             <div className='text-zone'>
                                 <p>
                                     I'm a University of Waterloo Engineering graduate passionate with building things and makking life easier.
@@ -58,8 +57,8 @@ const About = () => {
                         </div>
 
                         <div className='col-lg-6 col-md-12'>
-                            <div className='stage-cube-cont'>
-                                <div className='cubespinner'>
+                            <div className='row-cols-2 stage-cube-cont'>
+                                <div className='col cubespinner'>
                                     <div className='face1'>
                                         <FontAwesomeIcon icon={faJsSquare} color='#EFD18D' />
                                     </div>
@@ -80,7 +79,10 @@ const About = () => {
                                     </div>
 
                                 </div>
-                                <img src={tossSprite} />
+                                <div className='col sprite'>
+                                    <img src={tossSprite} />
+                                </div>
+
                             </div>
 
                         </div>

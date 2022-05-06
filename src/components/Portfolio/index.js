@@ -17,7 +17,7 @@ const Portfolio = () => {
         <div className='container-fluid portfolio-page'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-12'>
+                    <div className='col-lg-6 col-md-12'>
                         <h1>
                             <AnimatedLetters
                                 letterClass={letterClass}

@@ -41,7 +41,7 @@ const Contact = () => {
         <div className='container-fluid contact-page'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-12'>
+                    <div className='col-lg-6 col-md-12'>
                         <h1>
                             <AnimatedLetters
                                 letterClass={letterClass}
@@ -49,9 +49,6 @@ const Contact = () => {
                                 idx={15}
                             />
                         </h1>
-                    </div>
-
-                    <div className='col-6'>
                         <div className='text-zone'>
                             <p>I am looking for a job!! I am looking for a job!!I am looking for a job!!I am looking for a job!!I am looking for a job!!I am looking for a job!!I am looking for a job!!</p>
                             <div className='contact-form'>
@@ -78,7 +75,7 @@ const Contact = () => {
                         </div>
 
                     </div>
-                    <div className='col-6'>
+                    <div className='col-lg-6 col-md-12'>
                         <div className='info-map'>
                             Ramuel Batuigas,
                             <br />
