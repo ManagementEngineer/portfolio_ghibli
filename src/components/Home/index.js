@@ -13,10 +13,12 @@ import NoFace from '../../assets/images/no_face.svg';
 import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
+import { useMediaQuery } from 'react-responsive';
 
 
 
 const Home = () => {
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = [' ', ' ', 'R', 'a', 'm', 'u', 'e', 'l', ','];
     const jobArray = ['w', 'e', 'b', ' ', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
@@ -52,9 +54,11 @@ const Home = () => {
                                 </Button>
                             </Link>
                         </div>
-                        <div className='col-lg-6 col-md-12 col-md-12 mx-auto my-auto'>
-                            <Logo />
-                        </div>
+
+                        {isDesktopOrLaptop ?
+                            <div className='col-lg-6 col-md-12 mx-auto my-auto'>
+                                <Logo />
+                            </div> : ''}
                     </div> </div>
             </div>
 

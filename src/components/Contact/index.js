@@ -4,11 +4,13 @@ import AnimatedLetters from '../AnimatedLetters';
 import emailJS from '@emailjs/browser';
 import Loader from 'react-loaders';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useMediaQuery } from 'react-responsive';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const refForm = useRef();
     const position = [43.7808054, -79.4155833];
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
     useEffect(() => {
         setTimeout(() => {
@@ -75,28 +77,34 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6 col-md-12'>
-                            <div className='info-map'>
-                                Ramuel Batuigas,
-                                <br />
-                                Toronto, ON
-                                <br />
-                                <a href='https://www.linkedin.com/in/rjbatuigas'>LinkedIn</a>
-                            </div>
-                            <div className='map-wrap'>
-                                <MapContainer center={position} zoom={10}>
-                                    <TileLayer
-                                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                    />
-                                    <Marker position={position}>
-                                        <Popup>
-                                            This is the community where I live. <br /> Let's have a cup of coffee!
-                                        </Popup>
-                                    </Marker>
-                                </MapContainer>
-                            </div>
+                        {isDesktopOrLaptop ?
+                            <div className='col-lg-6 col-md-12'>
+                                <div className='info-map'>
+                                    Ramuel Batuigas,
+                                    <br />
+                                    Toronto, ON
+                                    <br />
+                                    <a href='https://www.linkedin.com/in/rjbatuigas'>LinkedIn</a>
+                                </div>
+                                <div className='map-wrap'>
+                                    <MapContainer center={position} zoom={10}>
+                                        <TileLayer
+                                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                        />
+                                        <Marker position={position}>
+                                            <Popup>
+                                                This is the community where I live. <br /> Let's have a cup of coffee!
+                                            </Popup>
+                                        </Marker>
+                                    </MapContainer>
+                                </div>
 
-                        </div>
+                            </div> : ''}
+
+
+
+
+
                     </div>
                 </div>
 
