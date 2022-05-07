@@ -10,7 +10,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
-        <div className="nav-bar">
+        <div className='col-1 nav-bar'>
             <Link className="logo" to="/">
                 <img src={LogoS} alt="Logo" />
             </Link>

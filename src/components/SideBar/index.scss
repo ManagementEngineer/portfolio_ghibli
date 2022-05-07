@@ -1,11 +1,10 @@
 .nav-bar {
     background: #181818;
-    width: 4.375rem;
+    width: auto;
     height: 100%;
     position: fixed;
-    top: 0;
     z-index: 3;
-    min-height: 500px;
+
 
     .logo {
         display: block;

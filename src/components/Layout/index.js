@@ -3,26 +3,27 @@ import NavBar from '../NavBar';
 import SideBar from '../SideBar';
 import './index.scss'
 import { useMediaQuery } from 'react-responsive'
+import { Container } from 'react-bootstrap';
+import Loader from 'react-loaders';
 
 const Layout = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
     return (
-        <div className="App">
-            {isTabletOrMobile ? <NavBar /> : <SideBar />}
-            <div className="page">
-                <span className="tags top-tags top-tag-html">&lt;html&gt;</span>
-                <span className="tags top-tags">&lt;body&gt;</span>
+        <div className='row g-0'>
+            <div className='col-1'>
+                {isTabletOrMobile ? <NavBar /> : <SideBar />}
+            </div>
+
+            <div className='col-11'>
 
                 <Outlet />
-                <span className="tags bottom-tags">
-                    &lt;/body&gt;
-                    <br />
-                    <span className="bottom-tag-html">&lt;/html&gt;</span>
-                </span>
+
             </div>
-        </div >
+            <Loader type='pacman' />
+        </div>
+
     )
 }
 

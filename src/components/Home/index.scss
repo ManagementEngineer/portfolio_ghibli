@@ -1,75 +1,38 @@
 .home-page {
-    // background-image: url('../../assets/images/bridge.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-color: #6daca4;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    background-color: cadetblue !important;
 
-
-    .text-zone {
-        height: 100%;
+    .title {
         position: relative;
-        top: 20%;
-
-        h1 {
-            color: #fff;
-            font-size: 103px;
-            line-height: 100px;
-            font-family: 'Coolvetica';
-            font-weight: 400;
-
-            &:before {
-                font-family: 'La Belle Aurore', cursive;
-                color: #ffd700;
-                font-size: 28.8px;
-                opacity: 0.6;
-            }
-
-            &:after {
-                font-family: 'La Belle Aurore', cursive;
-                color: #ffd700;
-                font-size: 28.8px;
-                animation: fadeIn 1s 1.7s backwards;
-                opacity: 0.6;
-
-
-            }
-        }
-
-        h2 {
-            color: #d9d9d9;
-            font-weight: 400;
-            font-size: 32px;
-            font-family: sans-serif;
-            letter-spacing: 3px;
-            animation: fadeIn 3s 1.8s backwards;
-
-        }
-
-
-        .custom-btn {
-            background-color: #00a651 !important;
-            font-size: 13px;
-            letter-spacing: 4px;
-            font-family: 'Montserrat', sans-serif;
-            text-decoration: none;
-            padding: 10px 18px;
-            border: 1px solid #00a651 !important;
-            margin-top: 25px;
-            float: left;
-            animation: slideInUp 3s;
-            white-space: nowrap;
-
-            &:hover {
-                background: #00a651;
-                color: #ffffff;
-            }
-        }
-
-
     }
+}
 
+.custom-btn {
+    background-color: #00a651 !important;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #00a651 !important;
+    margin-top: 25px;
+    float: left;
+    animation: slideInUp 3s;
+    white-space: nowrap;
+
+    &:hover {
+        background: #00a651;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-page {
+        .title {
+            h1 {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+
+        }
+    }
 }

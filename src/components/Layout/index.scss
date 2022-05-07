@@ -28,16 +28,14 @@
     margin-left: -20px;
 }
 
+.home-page,
 .about-page,
 .contact-page,
 .portfolio-page {
     background-color: #999778;
     display: flex;
     height: 100vh;
-
-    .container {
-        margin-top: 10%;
-    }
+    justify-content: center;
 
     h1 {
         position: relative;
@@ -47,28 +45,5 @@
         font-family: 'Coolvetica';
         font-weight: 400;
         text-align: left;
-
-        &:before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #fff;
-            font-size: 1.125rem;
-            opacity: 0.6;
-            margin-top: -10%;
-            left: -5%;
-            position: absolute;
-        }
-
-        &:after {
-            content: '</h1>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #fff;
-            font-size: 1.125rem;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-            bottom: -90%;
-            left: -5%;
-            position: absolute;
-        }
     }
 }
